@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#D22856">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+</head>
+<body>
+  <header class="page-header  page-header--nojs">
+    <div class="page-header__wrapper">
+      <div class="page-logo  page-logo--open">
+        <a class="page-logo__link  page-logo__link--headerlogo">
+          <svg class="header-logo  header-logo--mobile" width="74" height="23">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="header-logo  header-logo--tablet" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="header-logo  header-logo--desktop" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+          </svg>
+        </a>
+        <button type="button" class="toggle">
+          <span class="toggle__icon  toggle__icon--burger">
+          </span>
+        </button>
+      </div>
+      <nav class="main-nav  main-nav--shown">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru"  class="main-nav__link">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="page-info  page-info--index">
+      <div class="page-info__wrapper  page-info__wrapper--index">
+        <div class="page-title  page-title--index">
+          <h1 class="page-title__heading  page-title__heading--index">Взгляните на жизнь иначе!</h1>
+        </div>
+        <div class="app-download">
+          <a href="#" target="_blank"  class="btn  btn--download">Скачать приложение</a>
+          <div class="app-download__platforms">
+            <a href="https://www.apple.com/ru/ios/app-store/" class="app-download__url" target="_blank">
+              <img class="app-download__logo  app-download__logo--apple" src="img/logo-apple.svg" width="50" height="45" alt="Apple" title="Скачать приложение для iOS">
+            </a>
+            <a href="https://play.google.com/store?hl=ru" class="app-download__url" target="_blank">
+              <img class="app-download__logo  app-download__logo--google" src="img/logo-android.svg" width="45" height="40" alt="GooglePlay" title="Скачать приложение для Android">
+            </a>
+            <a href="https://www.microsoft.com/store/apps/windows-phone" class="app-download__url">
+              <img class="app-download__logo  app-download__logo--wp" src="img/logo-microsoft.svg" width="45" height="40" alt="Windows Phone" title="Скачать приложение для Windows Phone">
+            </a>
+          </div>
+          <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="features-title">
+        <div class="features-title__wrapper">
+          <h2 class="features-heading">Устали от серости мегаполиса?</h2>
+          <h2 class="features-heading">Нам есть, что вам<br>предложить!</h2>
+        </div>
+      </div>
+      <div class="features-list">
+        <div class="features-list__wrapper">
+          <div class="feature  feature--mood">
+            <h3 class="feature__title">Поднимает настроение</h3>
+            <p class="feature__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="feature  feature--world">
+            <h3 class="feature__title">Меняет мир вокруг</h3>
+            <p class="feature__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="feature  feature--friend">
+            <h3 class="feature__title">Заводит новых друзей</h3>
+            <p class="feature__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="proof">
+      <div class="proof__wrapper">
+        <div class="proof__content">
+          <h3 class="proof__title">Эффект <br> на 24 часа!</h3>
+          <p class="proof__text">Британские учёные провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a href="#" target="_blank"  class="proof__link">Узнать больше об исследовании</a>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <input class="slider__input" type="radio" name="slide-btn" value="slide-btn1" id="slide-btn1" checked>
+        <input class="slider__input" type="radio" name="slide-btn" value="slide-btn2" id="slide-btn2">
+        <input class="slider__input" type="radio" name="slide-btn" value="slide-btn3" id="slide-btn3">
+        <div class="reviews__list  slider__inner">
+          <div class="slider__slides">
+            <blockquote class="review  slider__slide">
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <h4 class="review__author">Николай Петров</h4>
+              <p class="review__about">25 лет, водитель трамвая</p>
+            </blockquote>
+            <blockquote class="review  slider__slide">
+              <p class="review__text">«Это приложение изменило мою жизнь! Сначала жена переписывалась там с кем-то в коментариях, потом вообще подала на развод и вышла за него замуж....»</p>
+              <h4 class="review__author">Сергей Иванов</h4>
+              <p class="review__about">35 лет, старший водитель трамвая</p>
+            </blockquote>
+            <blockquote class="review  slider__slide">
+              <p class="review__text">«Куда тут тыкать то? Сидел 5 часов тыкал в экран, так и не понял»</p>
+              <h4 class="review__author">Иван Николаев</h4>
+              <p class="review__about">86 лет, уверенный пользователь ПК</p>
+            </blockquote>
+          </div>
+        </div>
+        <div class="slider__controls">
+          <label class="slider__control  slider__control--1" for="slide-btn1"></label>
+          <label class="slider__control  slider__control--2" for="slide-btn2"></label>
+          <label class="slider__control  slider__control--3" for="slide-btn3"></label>
+        </div>
+      </div>
+    </section>
+    <section class="prices">
+      <div class="prices__wrapper slider">
+        <input class="slider__input" type="radio" name="table-slide-btn" value="table-slide-btn1" id="table-slide-btn1">
+        <input class="slider__input" type="radio" name="table-slide-btn" value="table-slide-btn2" id="table-slide-btn2" checked>
+        <input class="slider__input" type="radio" name="table-slide-btn" value="table-slide-btn3" id="table-slide-btn3">
+        <div class="price-list  slider__inner">
+          <table class="price-table  slider__slides  slider__slides--table">
+            <tbody>
+              <tr class="price-table__row">
+                <th class="price-table__title  price-table__title--hidden">
+                </th>
+                <th class="price-table__title">
+                  <span class="tariff">База</span>
+                  <span class="price">1,99 USD</span>
+                </th>
+                <th class="price-table__title">
+                  <span class="tariff  tariff--popular">Стандарт</span>
+                  <span class="price">3,99 USD</span>
+                </th>
+                <th class="price-table__title">
+                  <span class="tariff">Анлим</span>
+                  <span class="price">9,99 USD</span>
+                </th>
+              </tr>
+              <tr class="price-table__row">
+                <td class="price-table__cell  price-table__cell--hidden">
+                  <span class="option">Розовый фильтр</span>
+                </td>
+                <td class="price-table__cell  price-table__cell--avaliable">
+                  <span class="option  option--hidden">Розовый фильтр</span>
+                </td>
+                <td class="price-table__cell  price-table__cell--avaliable">
+                  <span class="option  option--hidden">Розовый фильтр</span>
+                </td>
+                <td class="price-table__cell  price-table__cell--avaliable">
+                  <span class="option  option--hidden">Розовый фильтр</span>
+                </td>
+              </tr>
+              <tr class="price-table__row">
+                <td class="price-table__cell  price-table__cell--hidden">
+                  <span class="option">Смайлики</span>
+                </td>
+                <td class="price-table__cell  price-table__cell--unavaliable">
+                  <span class="option  option--hidden">Смайлики</span>
+                </td>
+                <td class="price-table__cell  price-table__cell--avaliable">
+                  <span class="option  option--hidden">Смайлики</span>
+                </td>
+                <td class="price-table__cell  price-table__cell--avaliable">
+                  <span class="option  option--hidden">Смайлики</span>
+                </td>
+              </tr>
+              <tr class="price-table__row">
+                <td class="price-table__cell  price-table__cell--hidden">
+                  <span class="option">Комментарии</span>
+                </td>
+                <td class="price-table__cell  price-table__cell--unavaliable">
+                  <span class="option  option--hidden">Комментарии</span>
+                </td>
+                <td class="price-table__cell  price-table__cell--unavaliable">
+                  <span class="option  option--hidden">Комментарии</span>
+                </td>
+                <td class="price-table__cell  price-table__cell--avaliable">
+                  <span class="option  option--hidden">Комментарии</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="slider__controls  slider__controls--table">
+          <label class="slider__control  slider__control--1" for="table-slide-btn1"></label>
+          <label class="slider__control  slider__control--2" for="table-slide-btn2"></label>
+          <label class="slider__control  slider__control--3" for="table-slide-btn3"></label>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="feedback__wrapper">
+        <h2 class="feedback__title">Остались вопросы?</h2>
+        <h2 class="feedback__title">Свяжитесь с нами!</h2>
+        <div class="contacts-list">
+          <div class="contact  contact--phone">
+            <h5 class="contact__title">Звоните:</h5>
+            <a class="contact__text  contact__text--link" href="tel:+7(812)555-66-66" target="_blank">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contact  contact--mail">
+            <h5 class="contact__title">Пишите:</h5>
+            <a class="contact__text  contact__text--link" href="mailto:hello@pinkapp.ru" target="_blank">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contact  contact--adress">
+            <h5 class="contact__title">Приезжайте в гости:</h5>
+            <span class="contact__text">ул. Большая Конюшенная, 19/8</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div class="map__wrapper">
+        <div class="map__content" id="map">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer  page-footer--hidden">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <svg class="footer-logo  footer-logo--mobile" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+        </svg>
+        <svg class="footer-logo  footer-logo--desktop" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+        </svg>
+      </a>
+      <div class="social-buttons">
+        <a class="social-buttons__item  social-buttons__item--twitter" href="#" target="_blank"  title="Страница в Twitter"></a>
+        <a class="social-buttons__item  social-buttons__item--fb" href="#" target="_blank"  title="Страница в Facebook"></a>
+        <a class="social-buttons__item  social-buttons__item--youtube" href="#" target="_blank"  title="Канал на Youtube"></a>
+      </div>
+      <div class="developer">
+        <p class="developer__title">Разработано</p>
+        <a class="developer__link" href="https://htmlacademy.ru" target="_blank" title="Интерактивные онлайн-курсы HTML Academy">
+          <svg class="logo-htmlacademy" width="26.943" height="34.09">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+  <script type="text/javascript" src="js/main-menu.js"></script>
+  <script type="text/javascript" src="js/svg4everybody.js"></script>
+</body>
+</html>

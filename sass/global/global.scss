@@ -1,0 +1,65 @@
+body {
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $black;
+  font-style: normal;
+  background-color: $white;
+
+  @media #{$desktop-widths} {
+    max-width: 1500px;
+    box-shadow: 0 0 30px -4px rgba(0, 0, 0, 0.6);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  background-color: $bg-gray;
+}
+
+picture {
+  display: block;
+}
+
+a {
+  outline: 0;
+}
+
+label {
+  user-select: none;
+}
+
+input {
+  outline: none;
+}
+
+:hover,
+:hover::before,
+:hover::after {
+  transition: 0.3s ease all;
+}
+
+.mobile-hidden {
+  display: none;
+
+  @media #{$tablet-widths} {
+    display: inline;
+  }
+}
+
+.tablet-hidden {
+  @media #{$tablet-widths-only} {
+    display: none;
+  }
+}
+
+.pink-text {
+  color: $pink;
+}

@@ -1,0 +1,114 @@
+.upload-form {
+  background-color: $bg-gray;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet-widths} {
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 56px;
+    padding-bottom: 54px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 940px;
+    padding-left: 80px;
+    padding-right: 60px;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 27px;
+    padding-bottom: 55px;
+  }
+}
+
+.upload-form img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.upload-form__image {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media #{$tablet-widths} {
+    margin-left: 0;
+    margin-right: 0;
+    width: 300px;
+  }
+}
+
+.upload-form__tools {
+  @media #{$tablet-widths} {
+    margin-left: 45px;
+    flex-grow: 1;
+  }
+
+  @media #{$desktop-widths} {
+    margin-left: 90px;
+  }
+}
+
+.upload-form__filter-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 38px 66px 0 55px;
+
+  @media #{$tablet-widths} {
+    display: none;
+  }
+}
+
+.upload-form input[name="upload-filter"] {
+  display: none;
+}
+
+input[value="filter-crop"]:checked ~ .upload-form__filter-controls label[for="upload-filter-crop"] svg,
+input[value="filter-fill"]:checked ~ .upload-form__filter-controls label[for="upload-filter-fill"] svg,
+input[value="filter-contrast"]:checked ~ .upload-form__filter-controls label[for="upload-filter-contrast"] svg {
+  fill: $pink;
+}
+
+.upload-form__filter-toggle {
+  cursor: pointer;
+
+  @media #{$tablet-widths} {
+    display: none;
+  }
+}
+
+.upload-form__filter-toggle svg {
+  fill: $blue-30;
+}
+
+.upload-form__filter-toggle:hover svg {
+  fill: $blue-50;
+}
+
+.upload-form__buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 38px;
+  margin-bottom: 38px;
+
+  @media #{$tablet-widths} {
+    margin-left: 2px;
+    margin-right: 14px;
+    margin-top: 66px;
+    margin-bottom: 0;
+  }
+
+  @media #{$desktop-widths} {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 146px;
+  }
+}

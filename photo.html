@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#D22856">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script type="text/javascript" src="js/picturefill.js" async=""></script>
+</head>
+<body>
+  <header class="page-header  page-header--nojs">
+    <div class="page-header__wrapper">
+      <div class="page-logo  page-logo--open">
+        <a class="page-logo__link  page-logo__link--headerlogo" href="index.html" title="Вернуться на главную">
+          <svg class="header-logo  header-logo--mobile" width="74" height="23">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="header-logo  header-logo--tablet" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="header-logo  header-logo--desktop" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+          </svg>
+        </a>
+        <button type="button" class="toggle">
+          <span class="toggle__icon  toggle__icon--burger">
+          </span>
+        </button>
+      </div>
+      <nav class="main-nav  main-nav--shown">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--active">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru"  class="main-nav__link">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="page-info  page-info--photo">
+      <div class="page-info__wrapper  page-info__wrapper--photo">
+        <div class="page-title  page-title--photo">
+          <h1 class="page-title__heading  page-title__heading--photo">Фотографии пользователей</h1>
+        </div>
+      </div>
+    </section>
+    <section class="photo-block">
+      <div class="photo-block__wrapper">
+        <div class="photo-title">
+          <p class="photo-title__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
+        <article class="photo  photo--main">
+          <a class="photo__link" href="img/content/panorama-desktop@2x.jpg" target="blank" title="Открыть фотографию в полном размере">
+            <picture class="photo__image">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/content/panorama-desktop@1x.webp 1x, img/content/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/content/panorama-tablet@1x.webp 1x, img/content/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/panorama-mobile@1x.webp 1x, img/content/panorama-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/content/panorama-desktop@1x.jpg 1x, img/content/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/content/panorama-tablet@1x.jpg 1x, img/content/panorama-tablet@2x.jpg 2x">
+              <img src="img/content/panorama-mobile@1x.jpg" srcset="img/content/panorama-mobile@2x.jpg 2x" alt="picture">
+            </picture>
+          </a>
+          <div class="photo-comment  photo-comment--main">
+            <h5 class="photo-comment__author">Анна<span class="photo-comment__time"> (5 минут назад)</span></h5>
+            <p class="photo-comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+            <p class="photo-comment__footer">
+              <a href="#" class="photo-like" title="Лайк!">
+                <svg class="photo-like__icon" width="12.545" height="11.99">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-heart"></use>
+                </svg>
+              </a>
+                <span class="like-text">Нравится:
+                  <span class="like-counter">215</span>
+                </span>
+            </p>
+          </div>
+        </article>
+        <div class="photo-block__inner">
+          <article class="photo">
+            <a class="photo__link" href="img/content/photo-car-desktop@2x.jpg" target="blank" title="Открыть фотографию в полном размере">
+              <picture class="photo__image  photo__image--main">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/content/photo-car-desktop@1x.webp 1x, img/content/photo-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/content/photo-car-tablet@1x.webp 1x, img/content/photo-car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/photo-car-mobile@1x.webp 1x, img/content/photo-car-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/content/photo-car-desktop@1x.jpg 1x, img/content/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/content/photo-car-tablet@1x.jpg 1x, img/content/photo-car-tablet@2x.jpg 2x">
+                <img src="img/content/photo-car-mobile@1x.jpg" srcset="img/content/photo-car-mobile@2x.jpg 2x" alt="picture">
+              </picture>
+            </a>
+            <div class="photo-comment">
+              <h5 class="photo-comment__author">Левон<span class="photo-comment__time"> (5 часов назад)</span></h5>
+              <p class="photo-comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="photo-comment__footer">
+                <a href="#" class="photo-like" title="Лайк!">
+                  <svg class="photo-like__icon" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </a>
+                <span class="like-text">Нравится:
+                  <span class="like-counter">356</span>
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="photo">
+            <a class="photo__link" href="img/content/photo-drumset-desktop@2x.jpg" target="blank" title="Открыть фотографию в полном размере">
+              <picture class="photo__image">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/content/photo-drumset-desktop@1x.webp 1x, img/content/photo-drumset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/content/photo-drumset-tablet@1x.webp 1x, img/content/photo-drumset-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/photo-drumset-mobile@1x.webp 1x, img/content/photo-drumset-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/content/photo-drumset-desktop@1x.jpg 1x, img/content/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/content/photo-drumset-tablet@1x.jpg 1x, img/content/photo-drumset-tablet@2x.jpg 2x">
+                <img src="img/content/photo-drumset-mobile@1x.jpg" srcset="img/content/photo-drumset-mobile@2x.jpg 2x" alt="picture">
+              </picture>
+            </a>
+            <div class="photo-comment">
+              <h5 class="photo-comment__author">Антон<span class="photo-comment__time"> (12 часов назад)</span></h5>
+              <p class="photo-comment__text">Соседи будут рады!</p>
+              <p class="photo-comment__footer">
+                <a href="#" class="photo-like" title="Лайк!">
+                  <svg class="photo-like__icon" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </a>
+                <span class="like-text">Нравится:
+                  <span class="like-counter">666</span>
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="photo">
+            <a class="photo__link" href="img/content/photo-window-desktop@2x.jpg" target="blank" title="Открыть фотографию в полном размере">
+              <picture class="photo__image">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/content/photo-window-desktop@1x.webp 1x, img/content/photo-window-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/content/photo-window-tablet@1x.webp 1x, img/content/photo-window-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/photo-window-mobile@1x.webp 1x, img/content/photo-window-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/content/photo-window-desktop@1x.jpg 1x, img/content/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/content/photo-window-tablet@1x.jpg 1x, img/content/photo-window-tablet@2x.jpg 2x">
+                <img src="img/content/photo-window-mobile@1x.jpg" srcset="img/content/photo-window-mobile@2x.jpg 2x" alt="picture">
+              </picture>
+            </a>
+            <div class="photo-comment">
+              <h5 class="photo-comment__author">Борис<span class="photo-comment__time"> (20 часов назад)</span></h5>
+              <p class="photo-comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="photo-comment__footer">
+                <a href="#" class="photo-like" title="Лайк!">
+                  <svg class="photo-like__icon" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </a>
+                <span class="like-text">Нравится:
+                  <span class="like-counter">215</span>
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="photo">
+            <a class="photo__link" href="img/content/photo-fair-desktop@2x.jpg" target="blank" title="Открыть фотографию в полном размере">
+              <picture class="photo__image">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/content/photo-fair-desktop@1x.webp 1x, img/content/photo-fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/content/photo-fair-tablet@1x.webp 1x, img/content/photo-fair-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/photo-fair-mobile@1x.webp 1x, img/content/photo-fair-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/content/photo-fair-desktop@1x.jpg 1x, img/content/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/content/photo-fair-tablet@1x.jpg 1x, img/content/photo-fair-tablet@2x.jpg 2x">
+                <img src="img/content/photo-fair-mobile@1x.jpg" srcset="img/content/photo-fair-mobile@2x.jpg 2x" alt="picture">
+              </picture>
+            </a>
+            <div class="photo-comment">
+              <h5 class="photo-comment__author">Сергей<span class="photo-comment__time"> (25 часов назад)</span></h5>
+              <p class="photo-comment__text">Самая кубанская в мире!</p>
+              <p class="photo-comment__footer">
+                <a href="#" class="photo-like" title="Лайк!">
+                  <svg class="photo-like__icon" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </a>
+                <span class="like-text">Нравится:
+                  <span class="like-counter">4</span>
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="photo">
+            <a class="photo__link" href="img/content/photo-pov-desktop@2x.jpg" target="blank" title="Открыть фотографию в полном размере">
+              <picture class="photo__image">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/content/photo-pov-desktop@1x.webp 1x, img/content/photo-pov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/content/photo-pov-tablet@1x.webp 1x, img/content/photo-pov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/photo-pov-mobile@1x.webp 1x, img/content/photo-pov-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/content/photo-pov-desktop@1x.jpg 1x, img/content/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/content/photo-pov-tablet@1x.jpg 1x, img/content/photo-pov-tablet@2x.jpg 2x">
+                <img src="img/content/photo-pov-mobile@1x.jpg" srcset="img/content/photo-pov-mobile@2x.jpg 2x" alt="picture">
+              </picture>
+            </a>
+            <div class="photo-comment">
+              <h5 class="photo-comment__author">Максим<span class="photo-comment__time"> (40 часов назад)</span></h5>
+              <p class="photo-comment__text">Где снег-то?</p>
+              <p class="photo-comment__footer">
+                <a href="#" class="photo-like" title="Лайк!">
+                  <svg class="photo-like__icon" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </a>
+                <span class="like-text">Нравится:
+                  <span class="like-counter">150</span>
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="photo">
+            <a class="photo__link" href="img/content/photo-wing-desktop@2x.jpg" target="blank" title="Открыть фотографию в полном размере">
+              <picture class="photo__image">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/content/photo-wing-desktop@1x.webp 1x, img/content/photo-wing-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/content/photo-wing-tablet@1x.webp 1x, img/content/photo-wing-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/photo-wing-mobile@1x.webp 1x, img/content/photo-wing-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/content/photo-wing-desktop@1x.jpg 1x, img/content/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/content/photo-wing-tablet@1x.jpg 1x, img/content/photo-wing-tablet@2x.jpg 2x">
+                <img src="img/content/photo-wing-mobile@1x.jpg" srcset="img/content/photo-wing-mobile@2x.jpg 2x" alt="picture">
+              </picture>
+            </a>
+            <div class="photo-comment">
+              <h5 class="photo-comment__author">Надежда<span class="photo-comment__time"> (45 часов назад)</span></h5>
+              <p class="photo-comment__text">Всем GM и взаимные лайки!</p>
+              <p class="photo-comment__footer">
+                <a href="#" class="photo-like" title="Лайк!">
+                  <svg class="photo-like__icon" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </a>
+                <span class="like-text">Нравится:
+                  <span class="like-counter">2560</span>
+                </span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="photo-load">
+      <div class="photo-load__wrapper">
+        <p class="photo-load__title">
+          Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!
+        </p>
+        <form class="upload-form" action="https://echo.htmlacademy.ru" method="post">
+          <picture class="upload-form__image">
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/content/photo-road-desktop@1x.webp 1x, img/content/photo-road-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/content/photo-road-tablet@1x.webp 1x, img/content/photo-road-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/photo-road-mobile@1x.webp 1x, img/content/photo-road-mobile@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/content/photo-road-desktop@1x.jpg 1x, img/content/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/content/photo-road-tablet@1x.jpg 1x, img/content/photo-road-tablet@2x.jpg 2x">
+            <img src="img/content/photo-road-mobile@1x.jpg" srcset="img/content/photo-road-mobile@2x.jpg 2x" alt="picture">
+          </picture>
+          <div class="upload-form__tools">
+            <input type="radio" value="filter-crop" id="upload-filter-crop" name="upload-filter" checked>
+            <input type="radio" value="filter-fill" id="upload-filter-fill" name="upload-filter">
+            <input type="radio" value="filter-contrast" id="upload-filter-contrast" name="upload-filter">
+            <div class="upload-form__filter-controls">
+              <label class="upload-form__filter-toggle  upload-form__filter-toggle--crop" for="upload-filter-crop">
+                <svg width="48" height="48">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-editor-crop"></use>
+                </svg>
+              </label>
+              <label class="upload-form__filter-toggle  upload-form__filter-toggle--fill" for="upload-filter-fill">
+                <svg width="48" height="48">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-editor-fill"></use>
+                </svg>
+              </label>
+              <label class="upload-form__filter-toggle  upload-form__filter-toggle--contrast" for="upload-filter-contrast">
+                <svg width="32" height="32">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-editor-contrast"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="range-controls">
+              <div class="range-controls__wrap  range-controls__wrap--crop">
+                <div class="range-filter  range-filter--crop"></div>
+              </div>
+              <div class="range-controls__wrap  range-controls__wrap--fill">
+                <div class="range-filter  range-filter--fill"></div>
+              </div>
+              <div class="range-controls__wrap  range-controls__wrap--contrast">
+                <div class="range-filter  range-filter--contrast"></div>
+              </div>
+            </div>
+            <div class="upload-form__buttons">
+              <input class="button  button__submit-photo  button--active" id="submit-btn" type="submit" value="Запостить">
+              <input class="button  button__reset-photo  button--disabled" id="reset-btn" type="reset" value="Отмена">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper  page-footer__wrapper--photo">
+      <a class="page-footer__logo" href="index.html" title="Вернуться на главную">
+        <svg class="footer-logo  footer-logo--mobile" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+        </svg>
+        <svg class="footer-logo  footer-logo--desktop" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+        </svg>
+      </a>
+      <div class="social-buttons">
+        <a class="social-buttons__item  social-buttons__item--twitter" href="#" target="_blank"  title="Страница в Twitter"></a>
+        <a class="social-buttons__item  social-buttons__item--fb" href="#" target="_blank"  title="Страница в Facebook"></a>
+        <a class="social-buttons__item  social-buttons__item--youtube" href="#" target="_blank"  title="Канал на Youtube"></a>
+      </div>
+      <div class="developer">
+        <p class="developer__title">Разработано</p>
+        <a class="developer__link" href="https://htmlacademy.ru" target="_blank" title="Интерактивные онлайн-курсы HTML Academy">
+          <svg class="logo-htmlacademy" width="26.943" height="34.09">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/main-menu.js"></script>
+  <script type="text/javascript" src="js/svg4everybody.js"></script>
+</body>
+</html>

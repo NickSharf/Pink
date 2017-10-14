@@ -1,0 +1,26 @@
+.header-logo {
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  @media #{$tablet-widths} {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}

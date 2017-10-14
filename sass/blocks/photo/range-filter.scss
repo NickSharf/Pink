@@ -1,0 +1,69 @@
+.range-filter {
+  width: 100%;
+  height: 2px;
+  background-color: $black;
+  position: relative;
+  cursor: pointer;
+
+  @media #{$tablet-widths} {
+    margin-right: 18px;
+    margin-left: 55px;
+    width: auto;
+  }
+
+  @media #{$desktop-widths} {
+    margin-right: 30px;
+    margin-left: 92px;
+  }
+}
+
+.range-filter::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  background-color: $white;
+  top: -6px;
+}
+
+.range-filter:hover::before {
+  background-color: $pink;
+}
+
+.range-filter--crop::before {
+  right: 15%;
+
+  @media #{$tablet-widths} {
+    right: 21%;
+  }
+
+  @media #{$desktop-widths} {
+    right: 71%;
+  }
+}
+
+.range-filter--fill::before {
+  right: 45%;
+
+  @media #{$tablet-widths} {
+    right: 80%;
+  }
+
+  @media #{$desktop-widths} {
+    right: 9%;
+  }
+}
+
+.range-filter--contrast::before {
+  right: 75%;
+
+  @media #{$tablet-widths} {
+    right: 46%;
+  }
+
+  @media #{$desktop-widths} {
+    right: 40%;
+  }
+}
