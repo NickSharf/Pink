@@ -9,4 +9,5 @@ css/*.css
 node_modules/
 build/
 npm-debug.*
+.publish
 Thumbs.db
