@@ -15,6 +15,7 @@ var imagemin = require('gulp-imagemin');
 var webp = require('gulp-webp');
 var svgmin = require('gulp-svgmin');
 var svgstore = require('gulp-svgstore');
+var rigger = require('gulp-rigger');
 var run = require('run-sequence');
 var del = require('del');
 var ghPages = require('gulp-gh-pages');
@@ -29,6 +30,7 @@ gulp.task('clean', function() {
 
 gulp.task('html', function() {
   return gulp.src('*.html')
+    .pipe(rigger())
     .pipe(gulp.dest('build'));
 });
 
