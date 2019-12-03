@@ -39,7 +39,7 @@
     "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
     "build": "gulp build",
     "start": "npm run build && gulp serve",
-    "deploy": "gh-pages -d build"
+    "deploy": "gulp deploy"
   },
   "browserslist": [
     "last 2 versions",
