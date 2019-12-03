@@ -17,13 +17,13 @@
       <div class="page-logo  page-logo--open">
         <a class="page-logo__link  page-logo__link--headerlogo">
           <svg class="header-logo  header-logo--mobile" width="74" height="23">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-white-mobile"></use>
           </svg>
           <svg class="header-logo  header-logo--tablet" width="146.3" height="40.375">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-white-tablet"></use>
           </svg>
           <svg class="header-logo  header-logo--desktop" width="146.3" height="40.375">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-white-desktop"></use>
           </svg>
         </a>
         <button type="button" class="toggle">
@@ -237,10 +237,10 @@
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
         <svg class="footer-logo  footer-logo--mobile" width="146.3" height="40.375">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-blue-mobile"></use>
         </svg>
         <svg class="footer-logo  footer-logo--desktop" width="146.3" height="40.375">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-blue-desktop"></use>
         </svg>
       </a>
       <div class="social-buttons">
@@ -252,15 +252,13 @@
         <p class="developer__title">Разработано</p>
         <a class="developer__link" href="https://htmlacademy.ru" target="_blank" title="Интерактивные онлайн-курсы HTML Academy">
           <svg class="logo-htmlacademy" width="26.943" height="34.09">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <script type="text/javascript" src="js/map.js"></script>
-  <script type="text/javascript" src="js/main-menu.js"></script>
-  <script type="text/javascript" src="js/svg4everybody.js"></script>
+  <include src="src/components/map.html"></include>
+  <include src="src/components/js.html"></include>
 </body>
 </html>

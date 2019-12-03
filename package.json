@@ -1,34 +1,37 @@
 {
-  "name": "pink",
+  "name": "StartKIT",
   "version": "0.1.0",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "Стартовая сборка для начала проекта",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
-    "autoprefixer": "^8.3.0",
-    "browser-sync": "^2.23.7",
-    "css-mqpacker": "^6.0.2",
-    "del": "^3.0.0",
-    "eslint": "^4.19.1",
+    "autoprefixer": "^9.7.0",
+    "browser-sync": "^2.26.7",
+    "css-mqpacker": "^7.0.0",
+    "del": "^5.1.0",
+    "htmlhint": "^0.11.0",
+    "eslint": "^6.6.0",
     "eslint-config-htmlacademy": "^0.5.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-postcss": "^7.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-rigger": "^0.5.8",
-    "gulp-sass": "^4.0.1",
-    "gulp-svgmin": "^1.2.4",
-    "gulp-svgstore": "^6.1.1",
-    "gulp-uglify": "^3.0.0",
-    "gulp-webp": "^3.0.0",
-    "node-normalize-scss": "^3.0.0",
-    "run-sequence": "^2.2.1",
-    "stylelint": "^9.2.0",
-    "stylelint-config-htmlacademy": "^0.1.1"
+    "gh-pages": "^2.1.1",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-posthtml": "^3.0.4",
+    "posthtml-include": "^1.3.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgmin": "^2.2.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "node-normalize-scss": "^8.0.1",
+    "stylelint": "^11.1.1",
+    "stylelint-config-htmlacademy": "^0.1.4"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -36,7 +39,7 @@
     "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
     "build": "gulp build",
     "start": "npm run build && gulp serve",
-    "deploy": "gulp deploy"
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
@@ -49,9 +52,12 @@
     "*.js",
     "js/**/*.js",
     "img/**/*.svg",
-    "sass/**/*.{sass,scss}"
+    "scss/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8.2"
+    "node": "^10.0"
+  },
+  "dependencies": {
+    "npm-check-updates": "^3.1.26"
   }
 }
