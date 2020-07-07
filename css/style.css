@@ -737,6 +737,12 @@ input {
 .contest__form textarea:required:focus:valid {
   border-color: green; }
 
+.contest__form input:required:invalid:not(:-moz-placeholder-shown), .contest__form input:required:focus:invalid:not(:-moz-placeholder-shown), .contest__form textarea:required:invalid:not(:-moz-placeholder-shown), .contest__form textarea:required:focus:invalid:not(:-moz-placeholder-shown) {
+  border-color: red; }
+
+.contest__form input:required:invalid:not(:-ms-input-placeholder), .contest__form input:required:focus:invalid:not(:-ms-input-placeholder), .contest__form textarea:required:invalid:not(:-ms-input-placeholder), .contest__form textarea:required:focus:invalid:not(:-ms-input-placeholder) {
+  border-color: red; }
+
 .contest__form input:required:invalid:not(:placeholder-shown), .contest__form input:required:focus:invalid:not(:placeholder-shown),
 .contest__form textarea:required:invalid:not(:placeholder-shown),
 .contest__form textarea:required:focus:invalid:not(:placeholder-shown) {
