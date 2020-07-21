@@ -1,9 +1,8 @@
 {
-  "name": "StartKIT",
+  "name": "Pink",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
-  "description": "Стартовая сборка для начала проекта",
+  "description": "Pink",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^9.8.4",
